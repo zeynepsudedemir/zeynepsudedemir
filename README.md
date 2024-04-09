@@ -1,6 +1,6 @@
 # 👩🏽‍💻 About Me:
-Beginner software developer
-I'm currently learning java
+Beginner software developer<br>
+I'm currently learning java<br>
 
 
 # 💻 Tech Stack:
