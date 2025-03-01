@@ -1,6 +1,6 @@
 # 👩🏽‍💻 About Me:
 
-Beginner software developer<br>I'm currently learning java, kotlin, javascript, react, c#
+Beginner software developer<br>I'm currently learning  kotlin, javascript, react, c#
 
 
 # 💻 Tech Stack:
