@@ -12,4 +12,4 @@ Beginner software developer<br>I'm currently learning  kotlin, javascript, react
 ![](https://nirzak-streak-stats.vercel.app/?user=zeynepsudedemir&theme=bear&hide_border=true)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=zeynepsudedemir&theme=bear&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
