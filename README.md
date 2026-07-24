@@ -15,8 +15,6 @@ Hi, It's Zeynep! Welcome to my github account<br>I'm currently working on a comp
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=zeynepsudedemir&theme=aura&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zeynepsudedemir/zeynepsudedemir/pacman-output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zeynepsudedemir/zeynepsudedemir/pacman-output/pacman-contribution-graph.svg">
   <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/zeynepsudedemir/zeynepsudedemir/pacman-output/pacman-contribution-graph.svg" />
 </picture>
 
