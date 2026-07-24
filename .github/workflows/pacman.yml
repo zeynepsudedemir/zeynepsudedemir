@@ -1,4 +1,4 @@
-name: Generate Contribution Snake/Pacman
+name: Generate Pacman Contribution Graph
 
 on:
   schedule:
@@ -13,19 +13,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      # Yılan/Pacman formatında SVG üreten resmi action
-      - uses: Platane/snk@v3
+      # Pacman stilinde SVG üreten Platane/snk yapılandırması
+      - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/pacman-contribution-graph.svg?palette=pacman
+            dist/pacman-contribution-graph-dark.svg?palette=pacman&color_snake=#ff0000
 
-      # Üretilen SVG'leri pacman-output branch'ine pushlar
-      - name: push github-contribution-grid-snake.svg to the output branch
+      # Üretilen görselleri pacman-output branch'ine aktarır
+      - name: push pacman SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: pacman-output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}${{ secrets.GITHUB_TOKEN }}
