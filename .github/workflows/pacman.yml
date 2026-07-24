@@ -1,0 +1,28 @@
+name: Generate Pacman Contribution Graph
+
+on:
+  # Her 24 saatte bir otomatik çalışır
+  schedule:
+    - cron: "0 0 * * *"
+  # Dilediğinde manuel çalıştırma butonu ekler
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      # Pacman animasyonunu üreten Action
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: pacman-output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # GitHub Contribution SVG Üretici (Pacman temalı)
+      - uses: SnuffyDev/pacman-contribution-graph@v1.0.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          output_dir: dist
