@@ -16,18 +16,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Gerçek Pacman animasyonunu üreten resmi eklenti
       - name: Generate Pacman SVG
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # Üretilen pacman-contribution-graph.svg dosyasını pacman-output dalına gönderir
       - name: Push Pacman SVG to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: pacman-output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
